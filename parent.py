@@ -1,4 +1,4 @@
-# Parent Class
+
 class Person:
     def __init__(self, name, age):
         self.name = name
@@ -8,8 +8,6 @@ class Person:
         print("Name:", self.name)
         print("Age:", self.age)
 
-
-# Derived Class: Student
 class Student(Person):
     def __init__(self, name, age, roll_no):
         super().__init__(name, age)
@@ -19,8 +17,6 @@ class Student(Person):
         self.display()
         print("Roll Number:", self.roll_no)
 
-
-# Derived Class: Teacher
 class Teacher(Person):
     def __init__(self, name, age, subject):
         super().__init__(name, age)
@@ -30,8 +26,6 @@ class Teacher(Person):
         self.display()
         print("Subject:", self.subject)
 
-
-# Main Program
 s = Student("Kavyaa", 20, 101)
 t = Teacher("Ravi", 40, "Python")
 
