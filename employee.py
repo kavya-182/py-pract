@@ -1,4 +1,4 @@
-# Parent Class
+
 class Employee:
     def __init__(self, name, emp_id):
         self.name = name
@@ -8,9 +8,6 @@ class Employee:
         print("Employee Name:", self.name)
         print("Employee ID:", self.emp_id)
 
-
-# Derived Class: Manager
-class Manager(Employee):
     def __init__(self, name, emp_id, department):
         super().__init__(name, emp_id)
         self.department = department
@@ -19,8 +16,6 @@ class Manager(Employee):
         self.display()
         print("Department:", self.department)
 
-
-# Derived Class: Developer
 class Developer(Employee):
     def __init__(self, name, emp_id, language):
         super().__init__(name, emp_id)
@@ -30,8 +25,6 @@ class Developer(Employee):
         self.display()
         print("Programming Language:", self.language)
 
-
-# Main Program
 m = Manager("Ravi", 101, "HR")
 d = Developer("Kavyaa", 102, "Python")
 
